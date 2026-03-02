@@ -15,7 +15,7 @@ export class EmbedMapComponent {
   sources: {name: string, url:string}[] = [
     {
       name: 'A',
-      url: 'https://www.google.com/maps/d/embed?mid=1NHlWMJppjVqGeKHniEMHe-J-KwKTRKI&ehbc=2E312F&noprof=1'
+      url: 'https://www.google.com/maps/d/embed?mid=1NHlWMJppjVqGeKHniEMHe-J-KwKTRKI&ehbc=2E312F&noprof=1&ll=1.3417864572633789%2C103.89443384224086&z=12'
     },
     {
       name: 'dentalfloss23',
