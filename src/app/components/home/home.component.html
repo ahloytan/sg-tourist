@@ -1,0 +1,137 @@
+<div class="home">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-particles">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">✨</span>
+        <span>Explore Singapore Smart</span>
+      </div>
+      
+      <h1 class="hero-title">
+        <span class="title-word">Discover</span>
+        <span class="title-highlight">Singapore</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        A guide to stunning attractions, authentic local cuisine, and hidden gems. 
+        <br />No endless research. No repeated Reddit scrolling.
+      </p>
+      
+      <div class="cta-buttons">
+        <a routerLink="/map" class="btn btn-primary">
+          <span class="btn-icon">🗺️</span>
+          <span>Explore Places</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a routerLink="/dos-donts" class="btn btn-secondary">
+          <span class="btn-icon">⚠️</span>
+          <span>Dos & Don'ts</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Disclaimer Section -->
+  <section class="disclaimer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <h3>📌 A Quick Note</h3>
+        <p>This guide is <strong>not exhaustive</strong> and reflects my subjective picks. Singapore has so much to offer and these are just curated favorites to get you started. Feel free to explore beyond this list and discover your own hidden gems!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Must-Visit / Highlights Section -->
+  <section class="highlights">
+    <div class="container">
+      <h2>Categories</h2>
+
+      <div class="tabs">
+        <button (click)="showTourist()" [class.active]="activeTab() === 'tourist'">
+          First Timers
+        </button>
+        <button (click)="showNature()" [class.active]="activeTab() === 'nature'">
+          Nature
+        </button>
+        <button (click)="showLocal()" [class.active]="activeTab() === 'local'">
+          Explore
+        </button>
+      </div>
+
+      <div class="locations-grid">
+        @for (location of selectedLocations(); track location.id) {
+          <div class="location-card">
+            <div class="location-image">
+              <img [src]="location.imageUrl" [alt]="location.name" />
+            </div>
+            <div class="location-info">
+              <h3>{{ location.name }}</h3>
+              <p>Nearest MRT: {{ location.nearestMRT }}</p>
+              <p>{{ location.description }}</p>
+              <a [href]="location.link" target="_blank" class="event-link">Learn more</a>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasonal Events Section -->
+  <section class="seasonal-events">
+    <div class="container">
+      <h2>🎉 What's Happening in Singapore</h2>
+      <p class="section-subtitle">Seasonal events and attractions to check out during your visit</p>
+
+      <div class="events-grid">
+        @for (event of seasonalEvents; track event.id) {
+          <div class="event-card">
+            <div class="event-header">
+              <h3>{{ event.name }}</h3>
+              <span class="event-category" [class]="'category-' + event.category">
+                @switch (event.category) {
+                  @case ('sports') { 🏁 Sports }
+                  @case ('art') { 🎨 Art }
+                  @case ('food') { 🍽️ Food }
+                  @default { 🎉 Event }
+                }
+              </span>
+            </div>
+            <div class="location-image">
+              <img [src]="event.imageUrl" [alt]="event.name" />
+            </div>
+            <div class="event-details">
+              <p><strong>When:</strong> {{ event.date }}</p>
+              <p><strong>Nearest MRT:</strong> {{ event.nearestMrt }}</p>
+              <p class="event-description">
+                {{ event.description }}
+                @if (event.link) {
+                  <a [href]="event.link" target="_blank" class="event-link">here</a>
+                }
+              </p>
+
+            </div>
+          </div>
+        }
+      </div>
+
+      <p class="events-note">💡 Pro tip: Check official websites closer to your travel dates for exact schedules and ticket information. credit: @todaydowhat_bot</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to explore local picks?</h2>
+      <p>Check out the full map to see pins curated and saved by locals across the island.</p>
+      <a routerLink="/map" class="btn btn-primary">View Full Map</a>
+    </div>
+  </section>
+</div>

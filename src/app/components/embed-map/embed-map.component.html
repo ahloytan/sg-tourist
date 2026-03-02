@@ -1,0 +1,14 @@
+<div class="embed-maps">
+  <div class="tabs">
+    @for(source of sources; track i; let i = $index) {
+      <button (click)="select(i)" [class.active]="activeIndex() === i">
+        {{ source.name }}
+      </button>
+    }
+
+  </div>
+
+  <section class="iframe">
+    <iframe [src]="activeSource" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+  </section>
+</div>

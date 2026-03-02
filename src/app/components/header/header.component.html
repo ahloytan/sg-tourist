@@ -1,0 +1,62 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <a href="https://ahloytan.netlify.app/" target="_blank" class="brand-link">
+          <div>
+            <img src="assets/khk.jpg" alt="Site logo" class="brand-img" />
+          </div>
+        </a>
+      </div>
+      
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a 
+            routerLink="/" 
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link">
+            <span class="nav-icon">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+          <a 
+            routerLink="/places" 
+            routerLinkActive="active"
+            class="nav-link">
+            <span class="nav-icon">🏛️</span>
+            <span>Places</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a 
+            routerLink="/food" 
+            routerLinkActive="active"
+            class="nav-link">
+            <span class="nav-icon">🍜</span>
+            <span>Food</span>
+          </a>
+        </li> -->
+        <li class="nav-item">
+          <a 
+            routerLink="/map" 
+            routerLinkActive="active"
+            class="nav-link nav-link-primary">
+            <span class="nav-icon">📍</span>
+            <span>Map</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a 
+            routerLink="/dos-donts" 
+            routerLinkActive="active"
+            class="nav-link">
+            <span class="nav-icon">⚠️</span>
+            <span>Dos & Don'ts</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

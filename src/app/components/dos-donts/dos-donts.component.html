@@ -1,0 +1,132 @@
+<div class="dos-donts">
+  <div class="container">
+    <h1>Dos &amp; Don'ts in Singapore</h1>
+
+    <section class="dos">
+      <h2>✅ Dos</h2>
+      <details open>
+        <summary>Getting Around & Eating</summary>
+        <ul>
+          <li>🚆 Do use public transport; it's efficient and easy to navigate.
+              <ul class="sub-list">
+                <li>        
+                  Mass Rapid Transit (MRT) map -
+                  <a href="https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/rail_network.html" target="_blank">here</a>
+                </li>
+                <li>
+                  Best Value: Use Apple/Google Pay directly at the tapout. Cheapest way for short stays. No extra card fee.
+                </li>
+                <li>
+                  Alternative: Get an 
+                  <a href="https://www.smrt.com.sg/public-transport/getting-around/visiting-singapore/how-to-pay/" target="_blank">EZ-Link card</a> 
+                  (S$10, includes S$5 non-refundable card cost and S$5 stored value for travel. For longer stays, get a Tourist Pass for unlimited rides if you're hitting 6+ spots a day.
+                </li>
+              </ul>
+          </li>
+          <li>💵 Do carry cash for hawker centres and markets.
+            <ul class="sub-list">
+              <li>
+              List of Hawker Centres -
+              <a href="https://www.nea.gov.sg/docs/default-source/hawker-centres-documents/list-of-hcs_-25-july-2025.pdf" target="_blank">here</a>
+              </li>
+              <li>
+                Note: Most hawker stalls open throughout the day, but there are some that operate for the morning/lunch vs dinner crowd only. Do check the timings before you go!
+              </li>
+            </ul>
+          </li>
+          <li>📱 Useful apps:
+            <ul class="sub-list">
+              <li class="ride-hailing">🚗 Ride-hailing - 
+                @for (app of rideHailingApps; track app.name) {
+                  <a [href]="app.url" target="_blank">{{ app.name }}</a>
+                }
+              </li>
+              <li class="food-delivery">🍱 Food delivery - 
+                @for (app of foodDeliveryApps; track app.name) {
+                  <a [href]="app.url" target="_blank">{{ app.name }}</a>
+                }
+              </li>
+              <li class="navigation">🧭 Navigation - 
+                @for (app of navigationApps; track app.name) {
+                  <a [href]="app.url" target="_blank">{{ app.name }}</a>
+                }
+              </li>
+              <li class="rent-bicycle">🚴 Rent a bicycle - 
+                @for (app of rentBicycleApps; track app.name) {
+                  <a [href]="app.url" target="_blank">{{ app.name }}</a>
+                }
+              <li class="others">🎟️ Others:
+                <ul class="sub-list">
+                  @for (app of OthersApps; track app.name) {
+                    <li>
+                      <a [href]="app.url" target="_blank">{{ app.name }}</a> -
+                      {{app.desc}}
+                    </li>
+                  }
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+      <details>
+        <summary>General</summary>
+        <ul>
+          <li>🏃 While on escalators, do stand on the left and walk on the right.</li>
+          <li>☀️ You are encouraged to bring sunblock and a hat for protection from the sun.</li>
+          <li>💧 Bring a water bottle for hydration as it can get quite hot and humid. Some hawker centres and venues are equipped with water refill stations. </li>
+          <li>💨 Do bring a portable fan if possible!</li>
+          <li>☕️ It is a legal requirement to return your tray and crockery to designated stations after your meal.</li>
+          <li>🗑️ Do keep public places clean and dispose of litter properly - even a small candy wrapper can earn a fine.</li>
+          <li>🧍‍♂️ When visiting a hawker centre, a tissue packet left on a table serves as a reservation marker.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Before entering Singapore</summary>
+        <ul>
+          <li>Fill in arrival card here: <a href="https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card" target="_blank">
+            ICA Arrival Card</a>
+          </li>
+          <li>Purchase E-SIM beforehand. Or you can purchase one at the airport upon arrival 
+            <a href="https://www.changiairport.com/en/at-changi/facilities-and-services-directory/changi-airport-sim-card-purchase-buy-sim-card-singapore.html#directorydetailtabs-8befab768b-item-9e45ce8180-tab" target="_blank">here</a>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="donts">
+      <h2>🚫 Don'ts</h2>
+      <details>
+        <summary>Behaviour & Regulations</summary>
+        <ul>
+          <li>Don't chew gum or bring large quantities into the country (it's banned).</li>
+          <li>Don't smoke in non-designated areas; heavy fines apply.</li>
+          <li>Don't litter - you could receive an on-the-spot fine.</li>
+          <li>Don't be disrespectful towards officers, rangers, or public staff.</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Transit & Photography</summary>
+        <ul>
+          <li>Don't eat or drink on public transit (MRT, buses).</li>
+          <li>Don't take photos in places clearly marked "no photography" (e.g., certain museums).</li>
+          <li>Drone flying regulations 
+            <a href="https://dronefly.sg/" target="_blank">here</a>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="references">
+      <h2>Sources &amp; References</h2>
+      <p class="note">Credits and links to sources referenced on this page:</p>
+      <ul>
+        @for (ref of references; track ref.url) {
+          <li>
+            <a [href]="ref.url" target="_blank" rel="noopener">{{ ref.title }}</a>
+          </li>
+        }
+      </ul>
+    </section>
+  </div>
+</div>
