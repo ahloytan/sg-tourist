@@ -18,8 +18,7 @@ export class DosDontsComponent {
   ];
 
   foodDeliveryApps = [
-    { name: 'Deliveroo', url: 'https://apps.apple.com/us/app/deliveroo-food-shopping/id1001501844' },
-    { name: 'Foodpanda', url: 'https://apps.apple.com/us/app/foodpanda-food-groceries/id758103884' },
+    { name: 'FoodPanda', url: 'https://apps.apple.com/us/app/foodpanda-food-groceries/id758103884' },
     { name: 'GrabFood', url: 'https://apps.apple.com/us/app/grab-taxi-ride-food-delivery/id647268330' }
   ];
 
