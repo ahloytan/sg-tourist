@@ -79,6 +79,16 @@
     }
   }
 
+  .disclaimer-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-left: 4px solid #667eea;
+    border-radius: 6px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
   .references {
     p.note {
       margin-bottom: 0.5rem;

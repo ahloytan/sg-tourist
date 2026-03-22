@@ -50,6 +50,8 @@ export class DosDontsComponent {
     { title: 'Orchard Road — Shopping Guide', url: 'https://orchardroad.org/directory-categories/shop/shopping-malls'},
     { title: 'Coney Island Guide', url: 'https://thesmartlocal.com/read/coney-island-guide/'},
     { title: 'Best Hiking Trail Guide', url: 'https://sethlui.com/best-hiking-trail-guide-singapore/'},
-    { title: 'List of Pasar Malam (on-going)', url: 'https://ahboy.com/list-of-pasar-malam-in-singapore/'}
+    { title: 'List of Pasar Malam (on-going)', url: 'https://ahboy.com/list-of-pasar-malam-in-singapore/'},
+    { title: 'GetGo FAQ', url: 'https://help.getgo.sg/hc/en-us/articles/14462659133337-If-I-hold-a-foreign-driving-licence-can-I-drive-a-GetGo'},
+    { title: 'TribeCar FAQ', url: 'https://help.tribecar.com/support/solutions/articles/61000298092-am-i-eligible-to-join-tribecar-' }
   ];
 }
